@@ -74,14 +74,3 @@ body {
 }
 
 
-.card {
-  position: absolute;
-  padding: 5%;
-  background-color: #3F494F;
-  border-radius: 3rem;
-}
-
-.card__img {
-  width: 10%;
-}
-
