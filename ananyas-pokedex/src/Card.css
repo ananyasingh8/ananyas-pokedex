@@ -1,0 +1,38 @@
+.card {
+    position: absolute;
+    padding: 5%;
+    background-color: #3F494F;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.poke-search {
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.card-content {
+    display: flex;
+}
+
+.card__img {
+    border: 2px solid white;
+    width: 50%;
+}
+
+.card__text {
+    color: white;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid white;
+    margin-left: auto;
+}
+
+
+
