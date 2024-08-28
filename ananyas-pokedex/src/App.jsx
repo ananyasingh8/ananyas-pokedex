@@ -9,10 +9,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-        <div className="cardananya">
-            <Card className="card-container-2"/>
-        </div>
-
+        <Card />
     </div>
   )
 }

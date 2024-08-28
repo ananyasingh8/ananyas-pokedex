@@ -8,10 +8,25 @@
     justify-content: space-around;
 }
 
+.card-form {
+    display: flex;
+    gap: 1rem;
+}
+
 .poke-search {
+    width: 100%;
     border-radius: 2rem;
     font-size: 1.5rem;
     padding: 1.5rem;
+}
+
+.search-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.search-icon:hover {
+    cursor: pointer;
 }
 
 .card-content {
@@ -28,7 +43,7 @@
     font-size: 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: auto;
 }
 
