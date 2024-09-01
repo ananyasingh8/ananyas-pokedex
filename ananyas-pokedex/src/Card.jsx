@@ -2,11 +2,10 @@ import React from 'react';
 import './Card.css';
 import search from './assets/search.svg';
 
-
 export default function Card() {
 
     const [searchtext, setSearchText] = React.useState("");
-    const [data, setData] = React.useState({});
+    const [data, setData] = React.useState(null);
 
     function handleChange(event) {
         setSearchText(event.target.value);
@@ -33,14 +32,18 @@ export default function Card() {
                 <input type="text" placeholder="Enter Pokemon Name" className="poke-search"
                        onChange={handleChange} />
             </form>
-            <div className="card-content">
-                <img className="card__img" src={data.sprites.front_default} alt="Pokemon" />
-                <div className="card__text">
-                    <h2 className="poke-name">Name: {data.name}</h2>
-                    <h2 className="poke-type">Type: {data.types[0].type.name}</h2>
-                    <h2 className="poke-weight">Weight: {data.weight}</h2>
+            {data ? (
+                <div className="card-content">
+                    <img className="card__img" src={data.sprites?.front_default} alt="Pokemon" />
+                    <div className="card__text">
+                        <h2 className="poke-name">Name: {data.name}</h2>
+                        <h2 className="poke-type">Type: {data.types?.[0]?.type?.name}</h2>
+                        <h2 className="poke-weight">Weight: {data.weight}</h2>
+                    </div>
                 </div>
-            </div>
+            ) : (
+                <h2 className="card__text">Please enter a Pokemon name to search.</h2>
+            )}
         </div>
     );
 }
