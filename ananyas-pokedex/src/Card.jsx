@@ -2,6 +2,7 @@ import React from 'react';
 import './Card.css';
 import search from './assets/search.svg';
 
+
 export default function Card() {
 
     const [searchtext, setSearchText] = React.useState("");
